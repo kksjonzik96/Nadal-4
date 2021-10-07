@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(22, 76, 100);
+}
+
+.main {
+    border: 1px solid white;
+    margin: 20px auto;
+    position: relative;
+    width: 600px;
+    height: 602px;
+}
+
+
+.main div {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 50%;
+    
+}
+
+#red {
+    background-color: rgb(255, 80, 80);
+    margin-top: 1px;
+    position: relative;
+    text-align: right;
+    animation: one;
+    animation-duration: 10s;
+}
+
+@keyframes one {
+    0%   { top:0px; top:0px;}
+    50%  {top:100px;}
+    100%  {top: 0px; top:0px;}
+    
+}
+#yellow {
+    background-color: rgb(255, 204, 0);  
+    margin-top: 1px;
+    position: relative;
+    text-align: right;
+    animation: two;
+    animation-duration: 10s; 
+}
+
+@keyframes two {
+    0%   { left:0px; top:0px;}
+    50%  { left:200px; top:0px;}
+    100%  { left:0px; top:0px;}
+    
+}
+#green {
+    background-color: rgb(153, 255, 51);  
+    margin-top: 1px;
+    position: relative;
+    text-align: right;
+    animation: three;
+    animation-duration: 10s;
+}
+
+@keyframes three {
+    0%   { right:0px; top:0px;}
+    50%  {right:200px; top:0px;}
+    100%  { right:0px; top:0px;}
+    
+}
+
+/*HINT -   transform: rotateY(0deg);*/
